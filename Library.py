@@ -9,13 +9,13 @@ class Library:
 
   # Search By Title
   def search_by_title(self, title):
-    matching_books = [book for book in self.books if book.title.lower() == title.lower()]
-    return matching_books
+    matching_books = [book.title for book in self.books if book.title.lower() == title.lower()]
+    return print(matching_books)
   
   # Search by Author
   def search_by_author(self, author):
-    matching_books = [book for book in self.books if book.author.lower() == author.lower()]
-    return matching_books
+    matching_books = [book.title for book in self.books if book.author.lower() == author.lower()]
+    return print(matching_books)
   
   # Display all Catalogs
   def display_catalog(self):
